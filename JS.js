@@ -5,10 +5,10 @@ alert("hello");
 yourName = prompt("What is your name?");
 console.log(yourName);
 
-const a = 20;
-a=a+1;
-a = a*2;
-console.log(a); //error because we can't assign again value to conts
+// const a = 20;
+// a=a+1;
+// a = a*2;
+// console.log(a); //error because we can't assign again value to conts
 
 let b = 20;
 b=b+1;
@@ -22,4 +22,12 @@ console.log(c); //42
 
 console.log(typeof(b));
 
-"99.99" == 99.99;
+var amount = 10;
+amount = amount *2;
+console.log(amount);
+console.log(amount.toFixed(2));
+console.log(typeof(amount.toFixed(2))); // toFixed is changing a number to string
+
+amountString = 10;
+amountString = "$" + String(amountString);
+console.log(amountString);
