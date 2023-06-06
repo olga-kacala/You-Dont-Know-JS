@@ -49,24 +49,32 @@ while (newCustomerAmount > 0); //HEllo to you x1 becasue of do in the beggining
 
 
 let bankAccount = 10000;
-const spendingTreshold = 5000;
-const phonePrice = 1000;
+const spendingTreshold = 1000;
+const phonePrice = 100;
 const accessoriesPrice = 50;
-const taxRate = 0.10;
-let spendedAmount = 0;
+const taxRate = 0.09;
+let spent = 0;
+
+function calculatedTax(spent){
+    return spent*taxRate;
+}
 
 function totalPrice () {
-while (spendedAmount<bankAccount){
-   spendedAmount = spendedAmount + (phonePrice + accessoriesPrice);
-    bankAccount = bankAccount - spendedAmount;
-    console.log("$"+ bankAccount.toFixed(2));
-    console.log("$"+ spendedAmount.toFixed(2));
+while (spent < bankAccount) {
+    spent += phonePrice;
+    if (spent < spendingTreshold) {
+        spent += accessoriesPrice;
+    } else {
+        console.log("You don't want to spent that much")
+        break
+    }
 
-} 
-if (spendedAmount > bankAccount) {
-console.log("You can't afford this")
+    spent +=  calculatedTax(spent);
+    console.log("Your purchase: $" + spent.toFixed(2));
+if (spent >= bankAccount) {
+    console.log("You can't afford this");
+    }
 }
-
 }
-
 totalPrice();
+
