@@ -1,9 +1,9 @@
 // 1
 
-alert("hello");
+// alert("hello");
 
-yourName = prompt("What is your name?");
-console.log(yourName);
+// yourName = prompt("What is your name?");
+// console.log(yourName);
 
 // const a = 20;
 // a=a+1;
@@ -31,3 +31,42 @@ console.log(typeof(amount.toFixed(2))); // toFixed is changing a number to strin
 amountString = 10;
 amountString = "$" + String(amountString);
 console.log(amountString);
+
+let customerAmount = 3;
+while (customerAmount > 0) {
+    console.log("Hello");
+    customerAmount = customerAmount - 1;
+};// Hello x3
+
+let newCustomerAmount = 0;
+do {
+    console.log("Hello to you");
+    newCustomerAmount = newCustomerAmount -1;
+} 
+while (newCustomerAmount > 0); //HEllo to you x1 becasue of do in the beggining 
+
+//PRACTICE CHAPTER 1
+
+
+let bankAccount = 10000;
+const spendingTreshold = 5000;
+const phonePrice = 1000;
+const accessoriesPrice = 50;
+const taxRate = 0.10;
+let spendedAmount = 0;
+
+function totalPrice () {
+while (spendedAmount<bankAccount){
+   spendedAmount = spendedAmount + (phonePrice + accessoriesPrice);
+    bankAccount = bankAccount - spendedAmount;
+    console.log("$"+ bankAccount.toFixed(2));
+    console.log("$"+ spendedAmount.toFixed(2));
+
+} 
+if (spendedAmount > bankAccount) {
+console.log("You can't afford this")
+}
+
+}
+
+totalPrice();
