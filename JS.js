@@ -77,3 +77,9 @@ function totalPrice() {
 totalPrice();
 
 //CHAPTER 2
+
+function foo () {
+  return 11
+}
+
+foo.bar = "Hello";
