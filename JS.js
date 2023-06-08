@@ -78,8 +78,14 @@ totalPrice();
 
 //CHAPTER 2
 
-function foo () {
-  return 11
-}
+let str = "Hello";
+console.log(str.toUpperCase());
+console.log(str); // so method toUpperCase is not changeing originall string;
 
-foo.bar = "Hello";
+let arr = [1,2,3];
+let arr2 = [1,2,3];
+let num = "1,2,3";
+
+console.log(arr == arr2);
+console.log(arr == num);
+console.log(arr2 == num);
