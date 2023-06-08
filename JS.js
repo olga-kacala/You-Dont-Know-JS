@@ -82,6 +82,8 @@ let str = "Hello";
 console.log(str.toUpperCase());
 console.log(str); // so method toUpperCase is not changeing originall string;
 
+//Equality
+
 let arr = [1,2,3];
 let arr2 = [1,2,3];
 let num = "1,2,3";
@@ -89,3 +91,10 @@ let num = "1,2,3";
 console.log(arr == arr2);
 console.log(arr == num);
 console.log(arr2 == num);
+
+//Inequality
+
+let q = "41";
+let w = "11";
+
+console.log(q<w)
