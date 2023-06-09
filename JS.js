@@ -96,10 +96,10 @@ console.log(arr2 == num);
 
 let q = "41";
 let w = "11";
-
 console.log(q<w);
 
 //Hoisting 
+
 var h = 2;
 foo();					// works because `foo()`
 						// declaration is "hoisted"
@@ -110,6 +110,8 @@ function foo() {
 						// to the top of `foo()`
 }
 console.log( h );	// 2
+
+//Scope
 
 function foox() {
 	let a = 1;
