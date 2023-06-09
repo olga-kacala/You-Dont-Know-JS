@@ -114,6 +114,7 @@ console.log( h );	// 2
 //Scope
 
 function foox() {
+  "use strict" //if use a=1 instead of let a=1 strick mode would give a refference error
 	let a = 1;
 	if (a >= 1) {
 		let b = 2; // if statement is read only once (it is not a loop)
