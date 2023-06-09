@@ -145,3 +145,7 @@ cases(2);
 cases(10);
 cases(11);
 
+//ternary operator
+
+let qa = 1;
+let qs = (qa >=1) ? console.log("yes") : console.log("no");
