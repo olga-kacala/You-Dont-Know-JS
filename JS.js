@@ -146,7 +146,26 @@ cases(2);
 cases(10);
 cases(11);
 
-//ternary operator
+//Ternary operator
 
 let qa = 1;
 let qs = (qa >=1) ? console.log("yes") : console.log("no");
+
+//Closure
+
+function outer (out) {
+function inner (inn){
+console.log(out+inn)
+}
+return inner
+}
+let plusOne = outer(1);
+let plusTen = outer(10);
+plusOne(1);
+plusTen(1);
+
+
+//Write a function that would allow you to do this.
+// var addSix = createBase(6);
+// addSix(10); // returns 16
+// addSix(21); // returns 27
