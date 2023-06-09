@@ -97,4 +97,29 @@ console.log(arr2 == num);
 let q = "41";
 let w = "11";
 
-console.log(q<w)
+console.log(q<w);
+
+//Hoisting 
+var h = 2;
+foo();					// works because `foo()`
+						// declaration is "hoisted"
+function foo() {
+	h = 3;
+	console.log( h );	// 3
+	var h;				// declaration is "hoisted"
+						// to the top of `foo()`
+}
+console.log( h );	// 2
+
+function foox() {
+	let a = 1;
+	if (a >= 1) {
+		let b = 2; // if statement is read only once (it is not a loop)
+		while (b < 5) { //while is a loop here
+			let c = b * 2;
+			b++;
+			console.log(a,b,c );
+		}
+	}
+}
+foox();
