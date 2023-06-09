@@ -125,3 +125,23 @@ function foox() {
 	}
 }
 foox();
+
+//Conditionals
+
+function cases (s) {
+  switch (s) {
+    case 2:
+      case 10:
+        console.log("Only if I am 2 or 10");
+        break
+    case 12:
+      console.log("12");
+      break
+    default:
+      console.log("Other")
+  }
+}
+cases(2);
+cases(10);
+cases(11);
+
