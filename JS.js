@@ -188,3 +188,16 @@ foo();				// "global"
 obj1.foo();			// "obj1"
 foo.call( obj2 );		// "obj2"
 new foo();			// undefined
+
+//Protopypes
+
+let foo2 = {
+  a: "42"
+};
+
+let bar2 = Object.create(foo2);
+
+bar2.b = "Hello";
+
+console.log(bar2.a);
+console.log(bar2.b);
