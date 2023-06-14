@@ -202,3 +202,4 @@ bar2.b = "Hello";
 console.log(bar2.a);
 console.log(bar2.b);
 
+//CHAPTER 3
